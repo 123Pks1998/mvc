@@ -12,9 +12,9 @@ app.set("view engine", "ejs")
 app.set("views", path.resolve('./views'))
 
 // middleware
-// app.use(express.urlencoded({ extended: false }))
+app.use(express.urlencoded({ extended: true }))
 app.use(cors())
 
 app.use('/user', userRouter)
 
-app.listen(5000)
+app.listen(3000)
