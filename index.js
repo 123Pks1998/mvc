@@ -15,6 +15,6 @@ app.set("views", path.resolve('./views'))
 app.use(express.urlencoded({ extended: true }))
 app.use(cors())
 
-app.use('/user', userRouter)
+app.use('/', userRouter)
 
 app.listen(3000)
